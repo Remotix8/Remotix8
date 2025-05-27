@@ -121,4 +121,9 @@ npm start        # http://localhost:3000 에서 확인
 
 ## ⚖️ 라이선스
 
-본 프로젝트의 소스 코드는 Apache License 2.0 하에 배포됩니다.
+<p align="center">
+  [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
+</p>
+
+본 프로젝트의 소스 코드는 [Apache License 2.0](./LICENSE) 하에 배포됩니다.
+
