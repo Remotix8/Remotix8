@@ -19,7 +19,7 @@ Remotix UI Design 프로젝트는 원격 제어 로봇 시스템을 위한 직�
 
 2. **썸네일을 클릭하여 재생**
 
-   [![Demo Thumbnail](./team8/demo_thumbnail.png)](./team8/DEMO_Video.mp4)
+   [![Demo Thumbnail](./team8/demo_thumbnail.png)](./Team8/DEMO_Video.mp4)
 
 ---
 
