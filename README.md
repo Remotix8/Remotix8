@@ -1,4 +1,4 @@
-# Remotix UI Design 프로젝트
+# Remotix 프로젝트
 
 > **한 줄 소개:** React로 구현한 Operator’s Browser 형태의 원격 제어 UI SPA입니다.
 
