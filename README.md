@@ -16,9 +16,16 @@ Remotix UI Design 프로젝트는 원격 제어 로봇 시스템을 위한 직�
 ---
 
 ## 🎬 Demo
-* //video경로로
+
+아래 영상이 직접 재생됩니다:
+
+<video controls width="640">
+  <source src="./team8/DEMO_Video.mp4" type="video/mp4">
+  해당 브라우저는 HTML5 비디오 태그를 지원하지 않습니다.
+</video>
 
 ---
+
 
 ## 🛠️ 기술 스택
 
