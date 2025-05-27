@@ -73,17 +73,48 @@ Remotix8/               # 조직 루트
 
 ## 🚀 설치 및 실행
 
+다음 단계로 전체 프로젝트(Interface, 백엔드, Hardware)를 로컬에서 실행할 수 있습니다.
+
+### 1. 레포 전체 클론
+
 ```bash
-# 레포 클론
 git clone https://github.com/Remotix8/Interface.git
-cd Interface
+git clone https://github.com/Remotix8/Remotix-backend.git
+git clone https://github.com/Remotix8/Hardware.git
+```
 
-# 의존성 설치
-npm install
-# or yarn install
+### 2. ROS 및 rosbridge 실행
 
-# 개발 서버 실행
-npm start
+```bash
+# ROS 2 환경 설정 (예: Galactic)
+source /opt/ros/<distro>/setup.bash
+# rosbridge WebSocket 서버 실행
+ros2 launch rosbridge_server rosbridge_websocket_launch.xml
+```
+
+### 3. Hardware(Docker 컨테이너) 실행
+
+```bash
+cd Hardware
+docker build -t remotix-hardware .
+docker run -d --net=host remotix-hardware
+```
+
+### 4. 백엔드 API 서버 실행
+
+```bash
+cd ../Remotix-backend
+python3 -m venv venv && source venv/bin/activate
+pip install -r requirements.txt
+uvicorn main:app --reload --host 0.0.0.0 --port 8000
+```
+
+### 5. UI(Interface) 실행
+
+```bash
+cd ../Interface
+npm install      # 또는 yarn install
+npm start        # http://localhost:3000 에서 확인
 ```
 
 ## ⚖️ 라이선스
