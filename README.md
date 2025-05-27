@@ -17,8 +17,6 @@ Remotix UI Design 프로젝트는 원격 제어 로봇 시스템을 위한 직�
 
 ## 🎬 Demo
 
-
-
 ---
 
 ## 🛠️ 기술 스택
@@ -55,14 +53,20 @@ Remotix UI Design 프로젝트는 원격 제어 로봇 시스템을 위한 직�
 
 ## 📁 프로젝트 구조
 
+조직(Organization) 단위로 다음과 같은 레포지토리들이 존재합니다:
+
+```plaintext
+Remotix8/               # 조직 루트
+├─ Interface/           # React UI 레포 (Public)
+├─ Remotix-backend/     # 백엔드 서비스 (Private)
+└─ Hardware/            # TurtleBot3 Docker 이미지 (Public)
 ```
-Interface/                 # React UI 레포
-├─ public/                 # 정적 파일
-└─ src/                    # 소스 코드
-   ├─ components/          # 개별 컴포넌트
-   ├─ App.jsx              # 메인 컴포넌트
-   └─ index.jsx            # 진입점
-```
+
+* **Interface**: React 기반 원격 제어 UI
+* **Remotix-backend**: Python 기반 백엔드 API 서버
+* **Hardware**: ROS 2 기반 TurtleBot3 제어용 Docker 이미지
+
+각 레포지토리의 상세 구조는 해당 레포지토리의 README를 참고하세요.
 
 ---
 
