@@ -121,4 +121,4 @@ npm start        # http://localhost:3000 에서 확인
 
 ## ⚖️ 라이선스
 
-이 프로젝트는 [MIT License](LICENSE)에 따라 라이선스가 부여됩니다.
+본 프로젝트의 소스 코드는 Apache License 2.0 하에 배포됩니다.
